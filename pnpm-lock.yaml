@@ -5,6 +5,7 @@ importers:
   .:
     specifiers:
       '@nrwl/cli': 14.1.9
+      '@nrwl/js': ^14.1.9
       '@nrwl/nx-cloud': latest
       '@nrwl/workspace': 14.1.9
       app: 0.1.0
@@ -15,6 +16,7 @@ importers:
       app: 0.1.0
     devDependencies:
       '@nrwl/cli': 14.1.9_typescript@4.6.4
+      '@nrwl/js': 14.1.9_ud7s2amhva2x2qmcfkuftjejdy
       '@nrwl/nx-cloud': 14.0.5
       '@nrwl/workspace': 14.1.9_igyi7w6qm73tfaya7seiivlrqu
       nx: 14.1.9_typescript@4.6.4
@@ -573,12 +575,6 @@ packages:
       fastq: 1.13.0
     dev: true
 
-  /@nrwl/cli/14.1.9:
-    resolution: {integrity: sha512-7T03yVUNxXXR478L9TRRYlg1gsxvERpikSa1dppW+YjL0K4L2PLkZEPJqDMbrPmyAryeZpUCn9vLVOIThW47rA==}
-    dependencies:
-      nx: 14.1.9_typescript@4.6.4
-    dev: true
-
   /@nrwl/cli/14.1.9_typescript@4.6.4:
     resolution: {integrity: sha512-7T03yVUNxXXR478L9TRRYlg1gsxvERpikSa1dppW+YjL0K4L2PLkZEPJqDMbrPmyAryeZpUCn9vLVOIThW47rA==}
     dependencies:
@@ -621,6 +617,35 @@ packages:
       - canvas
       - node-notifier
       - nx
+      - supports-color
+      - ts-node
+      - typescript
+      - utf-8-validate
+    dev: true
+
+  /@nrwl/js/14.1.9_ud7s2amhva2x2qmcfkuftjejdy:
+    resolution: {integrity: sha512-bpwOjBfkSAs/knuRAJX+bpM0B6lWPol8AYbh9emgG+AP6rM+OU6BgpzRtkLruIiBUDV87bO5RSXgGkodUqNgVQ==}
+    dependencies:
+      '@nrwl/devkit': 14.1.9_nx@14.1.9
+      '@nrwl/jest': 14.1.9_nx@14.1.9+typescript@4.6.4
+      '@nrwl/linter': 14.1.9_nx@14.1.9+typescript@4.6.4
+      '@nrwl/workspace': 14.1.9_igyi7w6qm73tfaya7seiivlrqu
+      '@parcel/watcher': 2.0.4
+      chalk: 4.1.0
+      fast-glob: 3.2.7
+      fs-extra: 10.1.0
+      ignore: 5.2.0
+      js-tokens: 4.0.0
+      minimatch: 3.0.4
+      source-map-support: 0.5.19
+      tree-kill: 1.2.2
+    transitivePeerDependencies:
+      - bufferutil
+      - canvas
+      - eslint
+      - node-notifier
+      - nx
+      - prettier
       - supports-color
       - ts-node
       - typescript
@@ -2819,7 +2844,7 @@ packages:
     hasBin: true
     requiresBuild: true
     dependencies:
-      '@nrwl/cli': 14.1.9
+      '@nrwl/cli': 14.1.9_typescript@4.6.4
       '@nrwl/tao': 14.1.9_typescript@4.6.4
       '@parcel/watcher': 2.0.4
       '@swc-node/register': 1.5.1_typescript@4.6.4
@@ -3162,6 +3187,13 @@ packages:
       smart-buffer: 4.2.0
     dev: false
 
+  /source-map-support/0.5.19:
+    resolution: {integrity: sha512-Wonm7zOCIJzBGQdB+thsPar0kYuCIzYvxZwlBa87yi/Mdjv7Tip2cyVbLj5o0cFPN4EVkuTwb3GDDyUx2DGnGw==}
+    dependencies:
+      buffer-from: 1.1.2
+      source-map: 0.6.1
+    dev: true
+
   /source-map-support/0.5.21:
     resolution: {integrity: sha512-uBHU3L3czsIyYXKX88fdrGovxdSCoTGDRZ6SYXtSRxLZUzHg5P/66Ht6uoUlHu9EZod+inXhKo3qQgwXUT/y1w==}
     dependencies:
@@ -3379,6 +3411,11 @@ packages:
     dependencies:
       punycode: 2.1.1
     dev: false
+
+  /tree-kill/1.2.2:
+    resolution: {integrity: sha512-L0Orpi8qGpRG//Nd+H90vFB+3iHnue1zSSGmNOOCh1GLJ7rUKVwV2HvijphGQS2UmhUZewS9VgvxYIdgr+fG1A==}
+    hasBin: true
+    dev: true
 
   /tsconfig-paths/3.14.1:
     resolution: {integrity: sha512-fxDhWnFSLt3VuTwtvJt5fpwxBHg5AdKWMsgcPOOIilyjymcYVZoCQF8fvFRezCNfblEXmi+PcM1eYHeOAgXCOQ==}

@@ -18,6 +18,12 @@ Have a taste of [Nx](https://nx.dev/)
   * `pnpm add @taste-nx/simple --dir libs/complex`
   * Run `pnpm test complex` and it should pass
   * Run `pnpm nx graph` to check workspace structure
+* Create `hello-tsc` and `hello-swc` package
+  * `pnpm add -w -D @nrwl/js`
+  * `pnpm g @nrwl/js:library --name=hello-tsc --buildable --config=npm-scripts`
+  * `pnpm g @nrwl/js:library --name=hello-swc --compiler=swc --buildable --config=npm-scripts`
+  * Run `pnpm build hello-tsc` and it should build
+  * Run `pnpm build hello-swc` and it should build
 
 ---
 # TasteNx

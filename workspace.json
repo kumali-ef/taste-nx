@@ -3,6 +3,8 @@
   "version": 2,
   "projects": {
     "complex": "libs/complex",
+    "hello-swc": "libs/hello-swc",
+    "hello-tsc": "libs/hello-tsc",
     "simple": "libs/simple"
   }
 }

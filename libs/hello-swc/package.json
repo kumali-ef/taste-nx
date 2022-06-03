@@ -1,0 +1,9 @@
+{
+  "name": "@taste-nx/hello-swc",
+  "version": "0.0.1",
+  "type": "commonjs",
+  "scripts": {
+    "build": "echo 'implement build'",
+    "test": "echo 'implement test'"
+  }
+}
