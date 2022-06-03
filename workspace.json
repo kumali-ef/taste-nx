@@ -3,6 +3,9 @@
   "version": 2,
   "projects": {
     "complex": "libs/complex",
+    "demo-node-app": "apps/demo-node-app",
+    "demo-web-app": "apps/demo-web-app",
+    "demo-web-app-e2e": "apps/demo-web-app-e2e",
     "hello-swc": "libs/hello-swc",
     "hello-tsc": "libs/hello-tsc",
     "simple": "libs/simple"

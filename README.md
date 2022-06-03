@@ -24,6 +24,15 @@ Have a taste of [Nx](https://nx.dev/)
   * `pnpm g @nrwl/js:library --name=hello-swc --compiler=swc --buildable --config=npm-scripts`
   * Run `pnpm build hello-tsc` and it should build
   * Run `pnpm build hello-swc` and it should build
+  * **NOTE** `--config=npm-scripts` only works for libs
+* Create `demo-node-app` and `demo-web-app`
+  * `pnpm add -w -D @nrwl/node @nrwl/web`
+  * `pnpm g @nrwl/node:app demo-node-app`
+  * `pnpm g @nrwl/web:app demo-web-app`
+  * `pnpm add -w -D @babel/core@">=7.8.0 <8.0.0" @babel/preset-env@^7.0.0 babel-loader@^8.0.2 webpack@">=5.0.0 <6.0.0"`
+  * Then `pnpm i` should no longer complain about missing peer dependencies
+  * Try `pnpm start demo-node-app`
+  * Try `pnpm start demo-web-app`
 
 ---
 # TasteNx
