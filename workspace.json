@@ -4,6 +4,8 @@
   "projects": {
     "complex": "libs/complex",
     "demo-node-app": "apps/demo-node-app",
+    "demo-react-app": "apps/demo-react-app",
+    "demo-react-app-e2e": "apps/demo-react-app-e2e",
     "demo-web-app": "apps/demo-web-app",
     "demo-web-app-e2e": "apps/demo-web-app-e2e",
     "hello-swc": "libs/hello-swc",

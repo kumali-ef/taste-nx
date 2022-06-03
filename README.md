@@ -36,8 +36,13 @@ Have a taste of [Nx](https://nx.dev/)
 * Create `publish-me` package
   * `pnpm g @nrwl/js:lib publish-me --publishable --importPath="@taste-nx/publish-me"`
     * **NOTE** this one doesn't work with `--config=npm-scripts`
-  * Add `affected` to npm scripts
-  * Run `pnpm affected --target=test`
+  * Run `pnpm nx affected --target=test`
+* Create `demo-react-app`
+  * `pnpm add -w -D @nrwl/react @nrwl/storybook`
+  * `pnpm g @nrwl/react:app demo-react-app`
+  * Run `pnpm start demo-react-app`
+  * `pnpm g @nrwl/react:storybook-configuration demo-react-app`
+  * Run `pnpm nx run demo-react-app:storybook`
 
 ---
 # TasteNx
