@@ -1,0 +1,10 @@
+{
+  "name": "@taste-nx/complex",
+  "version": "0.0.0",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "dependencies": {
+    "@taste-nx/simple": "workspace:^0.0.0"
+  }
+}

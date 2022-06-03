@@ -8,6 +8,16 @@ Have a taste of [Nx](https://nx.dev/)
   * copy files `rsync -av ./taste-nx/ ./ --exclude=README.md`
   * move Nx Cloud accessToken from `nx.json` to `nx-cloud.env`
     * `NX_CLOUD_AUTH_TOKEN=<token>`
+* Create `simple` package and `complex` package
+  * Add `nx` & `nx g` to pnpm scripts
+  * `pnpm g npm-package simple`
+  * `pnpm g npm-package complex`
+  * Import `@taste-nx/simple` in `complex`
+  * Run `pnpm test complex` and it should fail
+  * Add `pnpm-workspace.yaml`
+  * `pnpm add @taste-nx/simple --dir libs/complex`
+  * Run `pnpm test complex` and it should pass
+  * Run `pnpm nx graph` to check workspace structure
 
 ---
 # TasteNx
