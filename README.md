@@ -33,6 +33,11 @@ Have a taste of [Nx](https://nx.dev/)
   * Then `pnpm i` should no longer complain about missing peer dependencies
   * Try `pnpm start demo-node-app`
   * Try `pnpm start demo-web-app`
+* Create `publish-me` package
+  * `pnpm g @nrwl/js:lib publish-me --publishable --importPath="@taste-nx/publish-me"`
+    * **NOTE** this one doesn't work with `--config=npm-scripts`
+  * Add `affected` to npm scripts
+  * Run `pnpm affected --target=test`
 
 ---
 # TasteNx
