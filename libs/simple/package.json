@@ -3,5 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "test": "node index.js"
+  },
+  "dependencies": {
+    "@taste-nx/simple2": "workspace:^0.0.0"
   }
 }

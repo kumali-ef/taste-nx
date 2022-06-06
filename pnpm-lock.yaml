@@ -135,6 +135,12 @@ importers:
     specifiers: {}
 
   libs/simple:
+    specifiers:
+      '@taste-nx/simple2': workspace:^0.0.0
+    dependencies:
+      '@taste-nx/simple2': link:../simple2
+
+  libs/simple2:
     specifiers: {}
 
 packages:
