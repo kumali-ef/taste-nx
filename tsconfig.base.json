@@ -15,10 +15,12 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@taste-nx/el-web-app-ui": ["libs/el-web-app-ui/src/index.ts"],
       "@taste-nx/hello-swc": ["libs/hello-swc/src/index.ts"],
       "@taste-nx/hello-tsc": ["libs/hello-tsc/src/index.ts"],
       "@taste-nx/publish-me": ["libs/publish-me/src/index.ts"]
     }
   },
+  "files": ["./global.d.ts"],
   "exclude": ["node_modules", "tmp"]
 }

@@ -43,7 +43,10 @@ Have a taste of [Nx](https://nx.dev/)
   * Run `pnpm start demo-react-app`
   * `pnpm g @nrwl/react:storybook-configuration demo-react-app`
   * Run `pnpm nx run demo-react-app:storybook`
-
+* Create `el-web-app-ui`
+  * `pnpm add -w -D tailwindcss @mui/base @emotion/react @emotion/styled`
+  * `pnpm g @nrwl/react:lib el-web-app-ui`
+  * Run `pnpm start el-web-app-ui`
 ---
 # TasteNx
 
