@@ -8,11 +8,7 @@
     ]
   ],
   "plugins": [
-    [
-      "tailwind-components", {
-        "config": "../../tailwind.js",
-        "format": "auto"
-      }
-    ]
+    ["babel-plugin-twin", { "debug": true }],
+    "babel-plugin-macros"
   ]
 }
